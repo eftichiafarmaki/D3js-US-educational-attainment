@@ -25,13 +25,10 @@
 <body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript">
-   function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(divid.style.display == 'block')
-          divid.style.display = 'none';
-       else
-          divid.style.display = 'block';
-   }
+	$(window).on('resize', function(){
+           var win = $(this); 
+           if (win.width() > 800) 
+        });
 </script>
 	
      <h1 class="title" onmouseover="responsiveVoice.speak('Educational Attainment in the United States','US English Female');" onmouseleave="responsiveVoice.cancel();">Educational Attainment in the United States</h1>
