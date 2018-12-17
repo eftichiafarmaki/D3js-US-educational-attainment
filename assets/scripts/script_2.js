@@ -24,8 +24,8 @@ var y = d3.scaleLinear()
 
 var treemap = d3.treemap()
         .size([width, height])
-        .paddingInner(0)
-        .round(false);
+        .paddingInner(0.5)
+        .round(true);
 
 var svg = d3.select('#'+el_id).append("svg")
     .attr("width", width + margin.left + margin.right)
